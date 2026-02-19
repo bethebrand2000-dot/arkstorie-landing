@@ -76,6 +76,11 @@ src="https://www.facebook.com/tr?id=880519974793559&ev=PageView&noscript=1"
   <style>
     html { scroll-behavior: smooth; }
     body { background-color: #0f0702; color: #f8fafc; overflow-x: hidden; }
+    @media (max-width: 768px) {
+  body {
+    padding-bottom: calc(120px + env(safe-area-inset-bottom));
+  }
+}
 
     #canvas-container {
       position: fixed; top: 0; left: 0;
@@ -514,6 +519,27 @@ src="https://www.facebook.com/tr?id=880519974793559&ev=PageView&noscript=1"
     </div>
   </section>
 
+  </section>  <!-- this is the FAQ section ending -->
+
+<!-- Scroll to Top + Footer -->
+<section class="bg-brand-surface border-t border-white/10 relative z-10">
+  <div class="max-w-7xl mx-auto px-6 py-10 pb-24 md:pb-10 flex flex-col items-center gap-6">
+
+    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      class="group flex items-center gap-2 px-6 py-3 rounded-full glass-light border border-white/10 hover:border-brand-primary/50 transition transform hover:-translate-y-1">
+      <i class="ph-bold ph-arrow-up text-lg text-brand-accent group-hover:translate-y-[-2px] transition"></i>
+      <span class="font-bold text-white">Scroll to Top</span>
+    </button>
+
+    <a href="https://www.instagram.com/the_ai_marketer_swaroop?igsh=MWpqZml2MjdhMGZzbw%3D%3D&utm_source=qr"
+      target="_blank"
+      class="text-center text-xs md:text-sm text-slate-400 leading-relaxed hover:text-brand-primary transition block cursor-pointer">
+      © 2026 Be The Brand. All Rights Reserved. Built for brands that want to scale smarter, faster, and stronger.
+    </a>
+
+  </div>
+</section>
+
   <!-- Sticky mobile footer -->
   <div class="fixed bottom-0 left-0 w-full bg-brand-dark/95 backdrop-blur border-t border-white/10 p-4 z-50 md:hidden">
     <div class="flex justify-between items-center gap-4">
@@ -635,24 +661,3 @@ src="https://www.facebook.com/tr?id=880519974793559&ev=PageView&noscript=1"
 </body>
 </html>
 
-</section>
-<!-- Scroll to Top + Footer -->
-<section class="bg-brand-surface border-t border-white/10 relative z-10">
-  <div class="max-w-7xl mx-auto px-6 py-10 flex flex-col items-center gap-6">
-
-    <!-- Scroll to top button -->
-    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
-      class="group flex items-center gap-2 px-6 py-3 rounded-full glass-light border border-white/10 hover:border-brand-primary/50 transition transform hover:-translate-y-1">
-      <i class="ph-bold ph-arrow-up text-lg text-brand-accent group-hover:translate-y-[-2px] transition"></i>
-      <span class="font-bold text-white">Scroll to Top</span>
-    </button>
-
-    <!-- Footer text -->
-    <a href="https://www.instagram.com/the_ai_marketer_swaroop?igsh=MWpqZml2MjdhMGZzbw%3D%3D&utm_source=qr"
-   target="_blank"
-   class="text-center text-xs md:text-sm text-slate-400 leading-relaxed hover:text-brand-primary transition block cursor-pointer">
-  © 2026 Be The Brand. All Rights Reserved. Built for brands that want to scale smarter, faster, and stronger.
-</a>
-
-  </div>
-</section>
