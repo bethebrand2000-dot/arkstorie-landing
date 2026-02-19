@@ -169,7 +169,7 @@ src="https://www.facebook.com/tr?id=880519974793559&ev=PageView&noscript=1"
       <span>|</span>
       <span id="top-bar-text" class="tracking-wide">
         You Save ₹400! Price increases in:
-        <span id="timer" class="font-mono bg-black/20 px-2 py-0.5 rounded text-brand-accent">03:00</span>
+        <span id="timer" class="font-mono bg-black/20 px-2 py-0.5 rounded text-brand-accent">15:00</span>
       </span>
     </div>
   </div>
@@ -207,7 +207,7 @@ src="https://www.facebook.com/tr?id=880519974793559&ev=PageView&noscript=1"
             <i class="ph-fill ph-ticket text-lg"></i> Launch Offer
           </div>
           <div id="hero-timer" class="text-5xl md:text-6xl font-black text-white font-mono tracking-tight tabular-nums drop-shadow-lg">
-            03:00
+            15:00
           </div>
           <div class="mt-2 text-slate-300 text-xs font-medium bg-black/30 px-3 py-1 rounded-full">
             Lock in ₹99 seat before it's gone
@@ -526,7 +526,7 @@ src="https://www.facebook.com/tr?id=880519974793559&ev=PageView&noscript=1"
 
   <script>
     // countdown
-    const timerDuration = 180;
+    const timerDuration = 900; // 15 minutes
     let timeInSecs = timerDuration;
     const timerElement = document.getElementById('timer');
     const heroTimerElement = document.getElementById('hero-timer');
@@ -615,3 +615,23 @@ src="https://www.facebook.com/tr?id=880519974793559&ev=PageView&noscript=1"
 
 </body>
 </html>
+
+</section>
+<!-- Scroll to Top + Footer -->
+<section class="bg-brand-surface border-t border-white/10 relative z-10">
+  <div class="max-w-7xl mx-auto px-6 py-10 flex flex-col items-center gap-6">
+
+    <!-- Scroll to top button -->
+    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      class="group flex items-center gap-2 px-6 py-3 rounded-full glass-light border border-white/10 hover:border-brand-primary/50 transition transform hover:-translate-y-1">
+      <i class="ph-bold ph-arrow-up text-lg text-brand-accent group-hover:translate-y-[-2px] transition"></i>
+      <span class="font-bold text-white">Scroll to Top</span>
+    </button>
+
+    <!-- Footer text -->
+    <p class="text-center text-xs md:text-sm text-slate-400 leading-relaxed">
+      © 2026 Be The Brand. All Rights Reserved. Built for brands that want to scale smarter, faster, and stronger.
+    </p>
+
+  </div>
+</section>
